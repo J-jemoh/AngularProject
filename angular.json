@@ -37,6 +37,7 @@
               "node_modules/font-awesome-scss/scss/font-awesome.scss",
               "node_modules/ti-icons/css/themify-icons.css",
               "src/assets/icon/icofont/css/icofont.scss",
+              "src/assets/icon/svg-animated/svg-weather.css",
               "src/styles.scss"
             ]
   
