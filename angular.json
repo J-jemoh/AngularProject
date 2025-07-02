@@ -24,22 +24,31 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets",
+              "src/favicon.ico"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+          
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome-scss/scss/font-awesome.scss",
+              "node_modules/ti-icons/css/themify-icons.css",
+              "src/assets/icon/icofont/css/icofont.scss",
+              "src/assets/css/animate.css",
               "src/styles.scss"
             ]
+  
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "3MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -82,12 +91,19 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets",
+              "src/favicon.ico"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+          
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome-scss/scss/font-awesome.scss",
+              "node_modules/ti-icons/css/themify-icons.css",
+              "src/assets/icon/icofont/css/icofont.scss",
+              "src/assets/css/animate.css",
               "src/styles.scss"
             ]
           }
