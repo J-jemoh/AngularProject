@@ -1,7 +1,7 @@
-import { Component,ElementRef, OnInit, ViewChild} from '@angular/core';
+import { Component,ElementRef, OnInit, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Breadcrumbs } from "../admin/breadcrumbs/breadcrumbs";
-import { Title } from "../admin/title/title";
+import { TitleComponent } from "../admin/title/title";
 import {animate, AUTO_STYLE, state, style, transition, trigger} from '@angular/animations';
 import {MenuItems} from '../../shared/menu-items/menu-items';
 import { ClickOutsideModule } from 'ng-click-outside';
@@ -10,6 +10,8 @@ import { SpinnerComponent } from "../../shared/spinner/spinner.component";
 import { AccordionLinkDirective } from '../../shared/accordion/accordionlink.directive';
 import { AccordionDirective } from '../../shared/accordion/accordion.directive';
 import {AccordionToggleDirective } from '../../shared/accordion/accordiontoggle.directive';
+import { NgScrollbarModule } from 'ngx-scrollbar';
+
 
 
 
@@ -17,7 +19,7 @@ import {AccordionToggleDirective } from '../../shared/accordion/accordiontoggle.
 @Component({
   standalone: true,
   selector: 'app-admin-layout',
-  imports: [RouterModule, Breadcrumbs, Title, ClickOutsideModule, CommonModule, SpinnerComponent,AccordionDirective,AccordionLinkDirective,AccordionToggleDirective],
+  imports: [RouterModule, Breadcrumbs, TitleComponent, ClickOutsideModule, CommonModule, SpinnerComponent,AccordionDirective,AccordionLinkDirective,AccordionToggleDirective,NgScrollbarModule],
   templateUrl: './admin-layout.html',
   providers: [MenuItems],
   styleUrl: './admin-layout.scss',
