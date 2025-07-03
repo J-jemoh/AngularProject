@@ -1,6 +1,7 @@
 <div class="card {{ fullCard }} {{ cardLoad }}" [@cardClose]="cardClose" [ngClass]="cardClass">
   <div class="card-header" *ngIf="title">
-    <h5>{{ title }}</h5>
+    <h5><b>{{ title }}</b></h5>
+    <hr style="border: none; border-top: 2px solid #000; margin: 0.5rem 0;" />
     <span *ngIf="!classHeader">{{ headerContent }}</span>
     <span *ngIf="classHeader">
       <ng-content select=".code-header"></ng-content>

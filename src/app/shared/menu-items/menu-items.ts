@@ -95,22 +95,22 @@ const MENUITEMS = [
         icon: 'ti-map-alt'
       },
       {
-        state: 'authentication',
+        state: 'users',
         short_label: 'A',
-        name: 'Authentication',
+        name: 'Manage Users',
         type: 'sub',
         icon: 'ti-id-badge',
         children: [
           {
-            state: 'login',
+            state: 'create',
             type: 'link',
-            name: 'Login',
-            target: true
+            name: 'New User',
+            target: false
           }, {
             state: 'registration',
             type: 'link',
-            name: 'Registration',
-            target: true
+            name: 'All Users',
+            target: false
           }
         ]
       },
